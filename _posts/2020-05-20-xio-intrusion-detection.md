@@ -2,15 +2,15 @@
 ## 多生产场景的视频实时读取与可视化
 视频实时检测界面：
 
-<p align="center"><img src="../_assets/images/检测界面.png" alt="视频实时检测界面" style="zoom:40%;" /></p>
+<p align="center"><img src="assets/img/检测界面.png" alt="视频实时检测界面" style="zoom:40%;" /></p>
 
 双击系统图标，启动系统，自动读取西奥电梯生产车间内多个工位摄像头的实时视频数据，进行人员异常行为事件的探测，将实时的检测结果和信息绘制并滚动显示在系统界面上。界面的左边部分显示各个工位的检测实况，右边部分分别滚动显示实时检测信息和最近一次出现人员异常行为的图像记录。
 
-<p align="center"><img src="../_assets/images/切换工位大屏聚焦.png" alt="切换工位大屏" style="zoom:90%;" /></p>
+<p align="center"><img src="img/切换工位大屏聚焦.png" alt="切换工位大屏" style="zoom:90%;" /></p>
 
 点击系统界面右上角的按钮，用来切换大屏显示的工位。
 
-<p align="center"><img src="../_assets/images/打开配置文件聚焦.png" alt="打开配置文件聚焦" style="zoom:120%;" /></p>
+<p align="center"><img src="../assets/img/打开配置文件聚焦.png" alt="打开配置文件聚焦" style="zoom:120%;" /></p>
 
 <p align="center"><img src="../_assets/images/配置文件.png" alt="配置文件" style="zoom:80%;" /></p>
 
