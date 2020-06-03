@@ -1,20 +1,21 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+---
+layout: compress
+---
 
-  {%- include head.html -%}
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
 
   <body>
+     {% include masthead.html %}
 
-    {%- include header.html -%}
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
+      <main id="main" role="main">
+	      
         {{ content }}
-      </div>
-    </main>
+      </main>
 
-    {%- include footer.html -%}
+    {% include footer.html %}
 
   </body>
-
 </html>
