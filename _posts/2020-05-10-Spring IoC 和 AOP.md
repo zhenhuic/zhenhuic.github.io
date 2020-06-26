@@ -50,3 +50,21 @@ Spring AOP 就是基于动态代理的，如果要代理的对象，实现了某
 Spring AOP 属于运行时增强，而 AspectJ 是编译时增强。 Spring AOP 基于代理(Proxying)，而 AspectJ 基于字节码操作(Bytecode Manipulation)。
 
 Spring AOP 已经集成了 AspectJ  ，AspectJ  应该算的上是 Java 生态系统中最完整的 AOP 框架了。AspectJ  相比于 Spring AOP 功能更加强大，但是 Spring AOP 相对来说更简单，如果我们的切面比较少，那么两者性能差异不大。但是，当切面太多的话，最好选择 AspectJ ，它比Spring AOP 快很多。
+
+## AOP 术语解释
+- 横切关注点：从每个方法中抽取出来的同一类非核心业务。
+- 切面 (Aspect)：封装横切关注点信息的类，每个关注点体现为一个通知方法。
+- 通知 (Advice)：切面必须要完成的各个具体工作。
+- 目标 (Target)：被通知的对象。
+- 代理 (Proxy)：向目标对象应用通知之后创建的代理对象。
+-  连接点 (Joinpoint)：横切关注点在程序代码中的具体体现，对应程序执行的某个特定位置。例如：类某个方法调用前、调用后、方法捕获到异常后等。
+    在应用程序中可以使用横纵两个坐标来定位一个具体的连接点：
+
+![](../../../../assets/images/SpringAOP横纵坐标定位连接点.jpg)
+
+- 切入点 (pointcut)：定位连接点的方式。每个类的方法中都包含多个连接点，所以连接点是类中客观存在的事物。如果把连接点看作数据库中的记录，那么切入点就是查询条件--AOP 可以通过切入点定位到特定的连接点。切点通过 `org.springframework.aop.Pointcut` 接口进行描述，它使用类和方法作为连接点的查询条件。
+- 织入 (Weaving)：把切面（aspect）连接到其它的应用程序类型或者对象上，并创建一个被通知（advised）的对象。 这些可以在编译时（例如使用 AspectJ 编译器），类加载时和运行时完成。 Spring和其他纯 Java AOP 框架一样，在运行时完成织入。
+
+
+
+## JDK 代理、CGLIB 和 AspectJ 的区别
