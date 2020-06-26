@@ -86,6 +86,6 @@ defaults:
       layout: "project"     
       
   - scope:
-      path: "assets/images"
+      path: "assets"
     values:
       image: true
