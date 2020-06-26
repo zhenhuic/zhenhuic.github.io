@@ -6,7 +6,6 @@ summary: Spring MVC 的概念与工作原理。
 tags: [spring]
 ---
 
-## Spring MVC 的概念和工作原理
 MVC 是一种设计模式,Spring MVC 是一款很优秀的 MVC 框架。Spring MVC 可以帮助我们进行更简洁的Web层的开发，并且它天生与 Spring 框架集成。Spring MVC 下我们一般把后端项目分为 Service层（处理业务）、Dao层（数据库操作）、Entity层（实体类）、Controller层(控制层，返回数据给前台页面)。
 
 ![SpringMVC的概念](../../../../assets/images/SpringMVC的概念.jpg)
